@@ -1,0 +1,23 @@
+
+.toolbar li {
+        display: inline; /* Отображать как строчный элемент */
+        background-color: #EEE; /*button color*/
+        margin-right: 150px; /* Отступ справа */
+        border: 1px solid; /* Рамка вокруг текста */
+        border-color: #F3F3F3 #BBB #BBB #F3F3F3;
+        margin: 50px; /*size between button*/
+        padding: 25px; /* button size */
+       }
+
+p .aboutme {
+    text-align: center;
+    color: green;
+}
+
+img {
+    border-radius: 20px;
+}
+
+p {
+    text-align: center;
+}
