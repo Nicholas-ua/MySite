@@ -77,24 +77,31 @@ I hope my website will be helpful for other people too.
     <br />
     <section  id="contacts">
         <p><b>Contacts</b></p>
-        <form method="post" action="https://formspree.io/smm1@ukr.net">
-            <label>Your name:
-                <input type="text" name="client-name" required placeholder="Your Name"/>
-            </label>
-            <br />
-            <label for="client-email">Your email:</label>
-            <input type="email" name="client-email" id="client-email" required/>
-            <br />
-            <label>Write me:
-                <input type="text" name="text" />
-            </label>
-             <br />
-            <input type="submit" value="SEND" />
-            <input type="reset" value="BLANK" />
-        </form>
+        <form>
+        <label><br />
+            Your Name:<input type="text" id="name"/>
+        </label>
+        <br />
+        <label><br />
+            Your email:<input type="text" id="email" />
+        </label>
+        <br />
+        <label><br />
+            Comments:<br /><textarea id="comment"></textarea>
+        </label>
+        <br />
+        <input type="submit" />
+    </form>
+    <div id="msg"></div>
         <br />
     </section>
     <br />
-    
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+    <script src="js/index.js"></script>
+
 </body>
 </html>
