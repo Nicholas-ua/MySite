@@ -17,25 +17,32 @@
 <body>
     <br />
     <header>
-        <nav>
-            <ul class="toolbar">
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#about">About me</a>
-                </li>
-                <li>
-                    <a href="#links">Links</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">About CAD-systems</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <br />
-    <hr />
+
+    <hr size="3" color="black"/>
     
         <section class="jumbotron">
 
@@ -71,10 +78,8 @@
 
         </section>
         
-    <br />
-    <hr />
+    <hr size="3" color="black">
     
-    <br />
     <section id="about">
         <p class="aboutme"><b>Short about me</b></p>
         <p>Hello! I am Mykola Savych.
@@ -87,9 +92,9 @@ These projects has been created by various CAD-systems: KOMPAS 3D, SOLIDWORKS, I
 I hope my website will be helpful for other people too.
 </p>
     </section>
-    <br />
-    <hr />
-    <br />
+
+   <hr size="3" color="black"/>
+
     <section id="links">
         <p class="linksto"><b>Links</b></p>
         <br />
@@ -109,35 +114,36 @@ I hope my website will be helpful for other people too.
         <p><b>Click on image to view Mechatronic</b></p>
         <br />
     </section>
-    <br />
-    <hr />
-    <br />
+
+    <hr size="3" color="black">
+
     <section  id="contacts">
         <p><b>Contacts</b></p>
+        <a href="https://www.facebook.com/profile.php?id=100022774381222"><img class="icon-facebook" src="images/facebook-512.png"/></a>
         <form>
-        <label><br />
-            Your Name:<input type="text" id="name"/>
+        <label><br>
+            Your Name:<input type="text" id="name" required>
         </label>
-        <br />
-        <label><br />
-            Your email:<input type="text" id="email" />
+        <br>
+        <label><br>
+            Your email:<input type="text" id="email" required>
         </label>
-        <br />
-        <label><br />
-            Comments:<br /><textarea id="comment"></textarea>
+        <br>
+        <label><br>
+            Comments:<br><textarea id="comment"></textarea>
         </label>
-        <br />
-        <input type="submit" />
+        <br>
+        <input class="btn" type="submit">
     </form>
     <div id="msg"></div>
-        <br />
+        <br>
     </section>
     <br />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
         integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 
