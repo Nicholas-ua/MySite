@@ -27,11 +27,14 @@ function sendForm(e) {
     });
 }
 
-$(document).bind( 'mousewheel', function (e) { 
-    var nt = $(document.body).scrollTop()-(e.deltaY*e.deltaFactor*100); 
-    e.preventDefault(); 
-    e.stopPropagation(); 
-    $(document.body).stop().animate( { 
-         scrollTop : nt 
-     } , 500 , 'easeInOutCubic' );  
-} )
+$(function() {
+    $('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
+    });
+});
