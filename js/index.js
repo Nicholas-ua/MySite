@@ -26,15 +26,3 @@ function sendForm(e) {
         $('#msg').html('Sorry, there is an error!');
     });
 }
-
-$(function() {
-    $('.smooth').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000);
-        }
-    });
-});
