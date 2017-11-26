@@ -47,7 +47,12 @@ p {
 }
 
 .icon-facebook {
-    float:right;
+    float: right;
     margin: auto;
-    width: 50%;
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
 }
