@@ -1,5 +1,5 @@
 $(function() {
-    $('.smooth').on('click', function(event) {
+    $('.nav-link').on('click', function(event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();
