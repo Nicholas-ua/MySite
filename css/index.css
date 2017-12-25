@@ -1,5 +1,5 @@
 body {
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     background-color: azure;
 }
@@ -16,10 +16,42 @@ p .aboutme {
 img {
     border-radius: 20px;
     width: 100%;
+    height: auto;
+    border: 3px solid white;
+}
+
+img:hover {
+    border: 3px solid rgba(140, 146, 138, 0.712);
 }
 
 p {
     text-align: center;
+}
+
+.content {
+    display: inline-flex;
+    box-sizing: border-box;
+    background-color: rgb(232, 241, 222);
+}
+
+.cad {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.cad img {
+    margin-top: 20px;
+}
+
+.robot {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+.robot img {
+    margin-top: 5px;
 }
 
 .linksto {
