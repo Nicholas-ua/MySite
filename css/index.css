@@ -13,6 +13,45 @@ p .aboutme {
     color: green;
 }
 
+#about img {
+    float: left;
+    width: 25%;
+}
+
+@media screen and (min-width: 600px) {
+    .content {
+        display: inline-flex;
+        box-sizing: border-box;
+        background-color: rgb(232, 241, 222);
+    }
+    
+    .cad {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .robot {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .cad {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .robot {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+}
+
 img {
     border-radius: 20px;
     width: 100%;
@@ -20,7 +59,7 @@ img {
     border: 3px solid white;
 }
 
-img:hover {
+.content img:hover {
     border: 3px solid rgba(140, 146, 138, 0.712);
 }
 
@@ -28,26 +67,8 @@ p {
     text-align: center;
 }
 
-.content {
-    display: inline-flex;
-    box-sizing: border-box;
-    background-color: rgb(232, 241, 222);
-}
-
-.cad {
-    width: 50%;
-    height: auto;
-    margin: 10px;
-}
-
 .cad img {
     margin-top: 20px;
-}
-
-.robot {
-    width: 50%;
-    height: auto;
-    margin: 10px;
 }
 
 .robot img {
@@ -72,6 +93,10 @@ p {
     margin-right: auto;
 }
 
+h2 {
+    text-align: center;
+}
+
 .btn {
     margin-left: 100px;
     margin-right: auto;
@@ -81,7 +106,7 @@ p {
 .icon-facebook {
     float: right;
     margin: auto;
-    width: 50%;
+    width: 25%;
 }
 
 footer {
